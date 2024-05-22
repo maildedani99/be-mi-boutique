@@ -21,7 +21,7 @@ app.post('/send-email', async (req, res) => {
   });
 
   let mailOptions = {
-    from: `"Contacto Web" <${process.env.EMAIL_USER}>`,
+    from: `"Contacto Web miboutiqueonline.es" <${process.env.EMAIL_USER}>`,
     to: 'info@miboutiqueonline.es', // Correo de destino
     subject: 'Nuevo mensaje de contacto',
     text: `Nombre: ${name}\nEmail: ${email}\nTeléfono: ${phone}\nMensaje: ${message}`,
